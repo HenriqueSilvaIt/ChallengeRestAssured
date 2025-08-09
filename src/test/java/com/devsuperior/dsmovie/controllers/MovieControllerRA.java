@@ -128,8 +128,7 @@ public class MovieControllerRA {
 				.post("/movies")
 				.then()
 				.statusCode(422)
-				.body("errors.message[0]", equalTo("Title must be between 5 and 80 characters"))
-				.body("errors.message[1]", equalTo("Required field"));
+				.body("errors.message", hasItems("Title must be between 5 and 80 characters", "Required field"));
 	}
 	
 	@Test
