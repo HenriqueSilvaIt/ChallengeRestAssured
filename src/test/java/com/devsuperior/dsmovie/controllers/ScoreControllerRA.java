@@ -87,7 +87,7 @@ public class ScoreControllerRA {
 				.put("/scores")
 				.then()
 				.statusCode(422)
-				.body("errors.message[0]", equalTo("Required field"));
+				.body("errors.message[0]", equalTo("Campo requerido"));
 	}
 	
 	@Test
@@ -109,6 +109,6 @@ public class ScoreControllerRA {
 				.put("/scores")
 				.then()
 				.statusCode(422)
-				.body("errors.message[0]", equalTo("Score should be greater than or equal to zero"));
+				.body("errors.message[0]", equalTo("Valor mínimo 0"));
 	}
 }
