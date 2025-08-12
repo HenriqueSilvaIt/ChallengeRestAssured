@@ -29,7 +29,7 @@ public class MovieControllerRA {
 	@BeforeEach
 	void setUp() throws Exception {
 
-		baseURI = "http://localhost:8090/";
+		baseURI = "http://localhost:8080/";
 
 
 
