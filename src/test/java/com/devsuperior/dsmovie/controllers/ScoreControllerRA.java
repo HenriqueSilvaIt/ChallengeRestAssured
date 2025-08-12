@@ -29,7 +29,7 @@ public class ScoreControllerRA {
 	@BeforeEach
 	void setUp() throws Exception {
 
-		baseURI = "http://localhost:8090/";
+		baseURI = "http://localhost:8080/";
 
 		clientUsername = "alex@gmail.com";
 		clientPassword = "123456";
